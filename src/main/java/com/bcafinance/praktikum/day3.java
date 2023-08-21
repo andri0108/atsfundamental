@@ -7,20 +7,14 @@ import java.util.Scanner;
 public class day3 {
     public static void main(String[] args) {
 
-        String Speed = "";
-        int Jumlah =0;
-        int asc;
-        System.out.print("Masukkan Kata : ");
-        Scanner scanner = new Scanner(System.in);
-        Speed = scanner.nextLine();
-        char [] chArr =Speed.toCharArray();
-        for (int i=0;i<chArr.length;i++){
-            asc=chArr[i];
-            if ((asc>=65&&asc<=90)||(asc>=97&&asc<=122)){
-                Jumlah += asc;
-            }
-        }
-        System.out.println(Jumlah);
+        int jumlahAnak = 3;
 
-        }
+        do {
+
+            jumlahAnak++;
+
+        } while (jumlahAnak <= 2);
+
+        System.out.print("Jumlah anak sekarang = " + jumlahAnak);
     }
+}
